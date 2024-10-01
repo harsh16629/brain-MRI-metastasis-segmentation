@@ -30,11 +30,6 @@ The following preprocessing steps are applied:
 - Both models were trained using the DICE Score as the primary evaluation metric.
 - The models were evaluated on a separate test set, and comparative results are discussed below.
 
-## Results
-- **Nested U-Net DICE Score**: [Insert Score]
-- **Attention U-Net DICE Score**: [Insert Score]
-- A detailed comparison of both models, including visual segmentation results, can be found in the provided notebook.
-
 ## Web Application
 A FastAPI backend serves the best-performing model, allowing users to upload MRI images and view segmentation results through a Streamlit UI.
 
