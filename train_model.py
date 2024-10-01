@@ -136,10 +136,13 @@ model = unet_plus_plus(input_shape, num_classes)
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 # Define a ModelCheckpoint callback to save the best model during training
-checkpoint = ModelCheckpoint('models/best_model.h5', monitor='val_loss', save_best_only=True)
+checkpoint = ModelCheckpoint('models/current_best_model.h5', monitor='val_loss', save_best_only=True)
 
 # Train the model
 model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=50, batch_size=16, callbacks=[checkpoint])
 
 # Model summary
 model.summary()
+
+#saving the model
+model.save('models/current_best_model.h5')
