@@ -32,8 +32,8 @@ The approach to this project consists of the following steps:
 
 The models were evaluated on a separate test set, and the results were compared based on their DICE scores:
 
-- **Nested U-Net DICE Score**: 0.82
-- **Attention U-Net DICE Score**: 0.85
+- **Nested U-Net DICE Score**: 0.83
+- **Attention U-Net DICE Score**: 0.88
 
 ### Summary of Results
 
