@@ -17,6 +17,8 @@ from tensorflow.keras.callbacks import ModelCheckpoint
 from tensorflow.keras import layers, Model
 
 # Load dataset paths
+"""Either download the dataset beforehand or 
+use the 'yummy456/brain-mri-dataset' from HuggingFace as your primary dataset"""
 def load_data(data_dir):
     images = []
     masks = []
